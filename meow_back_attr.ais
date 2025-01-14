@@ -1,7 +1,7 @@
 /// @ 0.12.4
 ### {
   name: "meow back"
-  version: "1.0.2"
+  version: "1.0.3"
   author: "mldchan"
   description: "This is a plugin that allows you to quickly meow back at cats"
   permissions: ["write:notes"]
