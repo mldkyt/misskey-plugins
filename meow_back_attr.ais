@@ -37,6 +37,6 @@ Plugin:register_note_action('Meow at this user :3', @(note) {
 		replyId: note.id,
 		text: `{mention} {meow}
 		
-<small>- generated with [meow back plugin for Misskey](https://social.mldchan.dev/notes/a2oyyk99m9et1lg1)</small>`
+<small>- generated with ?[meow back plugin for Misskey](https://social.mldchan.dev/notes/a2oyyk99m9et1lg1)</small>`
 	})
 })
