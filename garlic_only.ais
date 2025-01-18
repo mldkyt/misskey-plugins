@@ -1,0 +1,21 @@
+/// @ 0.12.4
+### {
+  name: "🧄"
+  version: "🧄"
+  author: "🧄"
+  description: "🧄"
+  permissions: ["write:notes", "write:reactions"]
+}
+
+Plugin:register_note_view_interruptor(@(note) {
+
+  var garlic = `🧄`
+
+  for (1000) {
+    garlic = `{garlic}🧄`
+  }
+
+  note.text = garlic
+
+  return note
+})
