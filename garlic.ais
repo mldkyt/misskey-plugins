@@ -19,9 +19,27 @@ Plugin:register_note_action('🧄', @(note) {
 		text: `:garlic:`
 	})
 
-    Mk:api("notes/reactions/create", {
-        noteId: garlic.createdNote.id,
-        reaction: `:garlic:`
-    })
+	var garlic2 = Mk:api("notes/create", {
+		replyId: note.id,
+		text: `:garlic:`
+	})
+
+  Mk:api("notes/reactions/create", {
+    noteId: garlic.createdNote.id,
+    reaction: `:garlic:`
+  })
+
+  Mk:api("notes/reactions/create", {
+    noteId: garlic2.createdNote.id,
+    reaction: `:garlic:`
+  })
+
+  Mk:api("notes/create", {
+    renoteId: garlic2.createdNote.id
+  })
+
+  Mk:api("notes/create", {
+    renoteId: garlic.createdNote.id
+  })
 
 })
