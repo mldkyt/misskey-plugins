@@ -1,0 +1,27 @@
+/// @ 0.12.4
+### {
+  name: "🧄"
+  version: "🧄"
+  author: "🧄"
+  description: "🧄"
+  permissions: ["write:notes", "write:reactions"]
+}
+
+Plugin:register_note_action('🧄', @(note) {
+
+	Mk:api("notes/reactions/create", {
+		noteId: note.id,
+		reaction: `🧄`
+	})
+
+	var garlic = Mk:api("notes/create", {
+		renoteId: note.id,
+		text: `:garlic:`
+	})
+
+    Mk:api("notes/reactions/create", {
+        noteId: garlic.createdNote.id,
+        reaction: `🧄`
+    })
+
+})
