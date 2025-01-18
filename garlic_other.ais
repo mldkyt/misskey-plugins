@@ -16,12 +16,12 @@ Plugin:register_note_action('🧄', @(note) {
 
 	var garlic = Mk:api("notes/create", {
 		renoteId: note.id,
-		text: `🧄`
+		text: `#🧄`
 	})
 
 	var garlic2 = Mk:api("notes/create", {
 		replyId: note.id,
-		text: `🧄`
+		text: `#🧄`
 	})
 
   Mk:api("notes/reactions/create", {
