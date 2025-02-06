@@ -17,8 +17,6 @@ Ui:render([
       meow = `{meow}3c`
     }
 
-    Mk:dialog("Meow", meow)
-
     Mk:api("notes/create", {
       text: `{meow}`
     })
