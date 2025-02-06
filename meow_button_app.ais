@@ -1,0 +1,26 @@
+Ui:render([
+  Ui:C:button({text: "Meow :3", onClick: @(){
+    var meow = `mraw`
+    let arr = ["a", "w", "r"]
+    for (Math:rnd(10, 30)) {
+      meow = `{meow}{arr[Math:rnd(0, 2)]}`
+    }
+
+    meow = `{meow} :`
+    
+    if (Math:rnd(1, 2) == 1) {
+      for (Math:rnd(1, 5)) {
+        meow = `{meow}3`
+      }
+    }
+    else {
+      meow = `{meow}3c`
+    }
+
+    Mk:dialog("Meow", meow)
+
+    Mk:api("notes/create", {
+      text: `{meow}`
+    })
+  }})
+])
